@@ -14,16 +14,6 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="src\ldpch.h" />
-    <ClInclude Include="src\Ludus\Core\Application.h" />
-    <ClInclude Include="src\Ludus\Core\EntryPoint.h" />
-    <ClInclude Include="src\Ludus\Core\PlatformDetection.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\ldpch.cpp" />
-    <ClCompile Include="src\Ludus\Core\Application.cpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{B227A00D-1E3C-C8BE-E7BD-6B1E5391C4EF}</ProjectGuid>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
@@ -83,7 +73,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>ldpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>LD_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -147,6 +137,18 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Ludus\Core\Application.h" />
+    <ClInclude Include="src\Ludus\Core\EntryPoint.h" />
+    <ClInclude Include="src\Ludus\Core\PlatformDetection.h" />
+    <ClInclude Include="src\ldpch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Ludus\Core\Application.cpp" />
+    <ClCompile Include="src\ldpch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

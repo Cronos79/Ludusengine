@@ -25,8 +25,9 @@ group "Core"
 group ""
 
 group "Tools"
-	include "LudusGame"
+	
 group ""
 
-group "Misc"
+group "Games"
+	include "LudusGame"
 group ""

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Ludus">
+      <UniqueIdentifier>{B227A00D-1E3C-C8BE-E7BD-6B1E5391C4EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ludus\Core">
+      <UniqueIdentifier>{4AEB7F2D-36A3-C17A-9FAA-9AD68B815C6B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Ludus\Core\Application.h">
+      <Filter>Ludus\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ludus\Core\EntryPoint.h">
+      <Filter>Ludus\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ludus\Core\PlatformDetection.h">
+      <Filter>Ludus\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ldpch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Ludus\Core\Application.cpp">
+      <Filter>Ludus\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ldpch.cpp" />
+  </ItemGroup>
+</Project>
