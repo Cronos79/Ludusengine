@@ -6,8 +6,11 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LDGApp.cpp">
+    <ClCompile Include="src\LDGApp.cpp">
       <Filter>src</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\LDGApp.h" />
   </ItemGroup>
 </Project>

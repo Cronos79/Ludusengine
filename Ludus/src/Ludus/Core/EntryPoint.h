@@ -1,5 +1,6 @@
 #pragma once
 #include "ldpch.h"
+#include "Application.h"
 
 #ifdef LD_PLATFORM_WINDOWS
 

@@ -11,10 +11,22 @@ Ludus::Application::~Application()
 
 }
 
+void Ludus::Application::Begin()
+{
+
+}
+
+void Ludus::Application::Tick(float dt)
+{
+
+}
+
 void Ludus::Application::Run()
 {
-	while (1)
+	Begin();
+	IsRunning = true;
+	while (IsRunning)
 	{
-
+		Tick(0.0f); // #TODO: Add a timer
 	}
 }

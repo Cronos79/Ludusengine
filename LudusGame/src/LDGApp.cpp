@@ -1,20 +1,5 @@
-#include "Ludus.h"
+#include "LDGApp.h"
 #include "Ludus/Core/EntryPoint.h"
-
-class LDGApp : public Ludus::Application
-{
-public:
-	LDGApp(const Ludus::ApplicationSpecification& spec)
-		: Ludus::Application(spec)
-	{
-
-	}
-
-	~LDGApp()
-	{
-
-	}
-};
 
 Ludus::Application* Ludus::CreateApplication(Ludus::ApplicationCommandLineArgs args)
 {
@@ -25,3 +10,25 @@ Ludus::Application* Ludus::CreateApplication(Ludus::ApplicationCommandLineArgs a
 
 	return new LDGApp(spec);
 }
+
+LDGApp::LDGApp(const Ludus::ApplicationSpecification& spec)
+	: Application(spec)
+{
+
+}
+
+LDGApp::~LDGApp()
+{
+
+}
+
+void LDGApp::Begin()
+{
+	
+}
+
+void LDGApp::Tick(float dt)
+{
+	
+}
+

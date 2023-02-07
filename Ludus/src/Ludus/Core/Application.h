@@ -29,9 +29,12 @@ namespace Ludus
 	public:
 		Application(const ApplicationSpecification& specification);
 		virtual ~Application();
+		virtual void Begin();
+		virtual void Tick(float dt);
 	private:
 		void Run();
 	private:
+		bool IsRunning{ false };
 		friend int ::main(int argc, char** argv);
 	};
 

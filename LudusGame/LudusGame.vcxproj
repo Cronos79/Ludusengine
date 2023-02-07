@@ -143,7 +143,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LDGApp.cpp" />
+    <ClCompile Include="src\LDGApp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\LDGApp.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
