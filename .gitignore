@@ -424,3 +424,5 @@ FodyWeavers.xsd
 Ludus/3rdparty/GLFW/
 
 Ludus/3rdparty/spdlog/
+
+bin-int/
