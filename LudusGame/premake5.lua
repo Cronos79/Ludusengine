@@ -15,8 +15,9 @@ project "LudusGame"
 
 	includedirs
 	{
-		"%{wks.location}/Hazel/src",
-		"%{wks.location}/Hazel/3rdparty"
+		"src",
+		"%{wks.location}/Ludus/src",
+		"%{wks.location}/Ludus/3rdparty"
 	}
 
 	links

@@ -1,7 +1,9 @@
 #pragma once
+#include <string>
+
 int main(int argc, char** argv);
 
-namespace Hazel 
+namespace Ludus 
 {
 	struct ApplicationCommandLineArgs
 	{
@@ -27,5 +29,12 @@ namespace Hazel
 	public:
 		Application(const ApplicationSpecification& specification);
 		virtual ~Application();
+	private:
+		void Run();
+	private:
+		friend int ::main(int argc, char** argv);
 	};
+
+	// To be defined in CLIENT
+	Application* CreateApplication(ApplicationCommandLineArgs args);
 }

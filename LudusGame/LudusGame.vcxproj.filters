@@ -5,4 +5,9 @@
       <UniqueIdentifier>{279ff564-907f-48eb-acb1-e89b0513fa1a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LDGApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

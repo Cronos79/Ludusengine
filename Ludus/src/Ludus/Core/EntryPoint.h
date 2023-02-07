@@ -3,27 +3,23 @@
 
 #ifdef LD_PLATFORM_WINDOWS
 
-//extern Hazel::Application* Hazel::CreateApplication(ApplicationCommandLineArgs args);
+extern Ludus::Application* Ludus::CreateApplication(ApplicationCommandLineArgs args);
 
 int main(int argc, char** argv)
 {
 	//Hazel::Log::Init();
 
 	//HZ_PROFILE_BEGIN_SESSION("Startup", "HazelProfile-Startup.json");
-	//auto app = Hazel::CreateApplication({ argc, argv });
+	auto app = Ludus::CreateApplication({ argc, argv });
 	//HZ_PROFILE_END_SESSION();
 
 	//HZ_PROFILE_BEGIN_SESSION("Runtime", "HazelProfile-Runtime.json");
-	//app->Run();
+	app->Run();
 	//HZ_PROFILE_END_SESSION();
 
 	//HZ_PROFILE_BEGIN_SESSION("Shutdown", "HazelProfile-Shutdown.json");
-	//delete app;
+	delete app;
 	//HZ_PROFILE_END_SESSION();
-	while (1)
-	{
-
-	}
 }
 
 #endif

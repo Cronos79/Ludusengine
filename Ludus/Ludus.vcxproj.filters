@@ -19,6 +19,7 @@
       <Filter>Ludus\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\ldpch.h" />
+    <ClInclude Include="src\Ludus.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Ludus\Core\Application.cpp">

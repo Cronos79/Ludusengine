@@ -73,7 +73,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>ldpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>LD_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -138,6 +138,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Ludus.h" />
     <ClInclude Include="src\Ludus\Core\Application.h" />
     <ClInclude Include="src\Ludus\Core\EntryPoint.h" />
     <ClInclude Include="src\Ludus\Core\PlatformDetection.h" />

@@ -1,12 +1,20 @@
 #include "ldpch.h"
 #include "Application.h"
 
-Hazel::Application::Application(const ApplicationSpecification& specification)
+Ludus::Application::Application(const ApplicationSpecification& specification)
 {
 
 }
 
-Hazel::Application::~Application()
+Ludus::Application::~Application()
 {
 
+}
+
+void Ludus::Application::Run()
+{
+	while (1)
+	{
+
+	}
 }
