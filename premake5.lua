@@ -9,11 +9,6 @@ workspace "Ludus"
 		"Dist"
 	}
 
-	solution_items
-	{
-		".editorconfig"
-	}
-
 	flags
 	{
 		"MultiProcessorCompile"
@@ -22,7 +17,7 @@ workspace "Ludus"
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 group "Dependencies"
-	include "3rdparty/premake"
+	--include "3rdparty/premake"
 group ""
 
 group "Core"

@@ -1,5 +1,5 @@
-project "LudusGame"
-	kind "ConsoleApp"
+project "Ludus"
+	kind "StaticLib"
 	language "C++"
 	cppdialect "C++20"
 	staticruntime "off"
@@ -7,37 +7,67 @@ project "LudusGame"
 	targetdir ("%{wks.location}/bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("%{wks.location}/bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "ldpch.h"
+	pchsource "src/ldpch.cpp"
+
 	files
 	{
 		"src/**.h",
 		"src/**.cpp"
 	}
 
+	defines
+	{
+	}
+
 	includedirs
 	{
-		"%{wks.location}/Hazel/src",
-		"%{wks.location}/Hazel/3rdparty"
+		"src",
+		"3rdparty/spdlog/include"
 	}
 
 	links
 	{
-		"Ludus"
 	}
 
 	filter "system:windows"
 		systemversion "latest"
+
+		defines
+		{
+		}
+
+		links
+		{
+			--"%{Library.WinSock}",
+			--"%{Library.WinMM}",
+			--"%{Library.WinVersion}",
+			--"%{Library.BCrypt}",
+		}
 
 	filter "configurations:Debug"
 		defines "LD_DEBUG"
 		runtime "Debug"
 		symbols "on"
 
+		links
+		{
+		}
+
 	filter "configurations:Release"
 		defines "LD_RELEASE"
 		runtime "Release"
 		optimize "on"
 
+		links
+		{
+		}
+
 	filter "configurations:Dist"
 		defines "LD_DIST"
 		runtime "Release"
 		optimize "on"
+
+		links
+		{
+		}

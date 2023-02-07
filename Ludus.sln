@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{DD376B17-49ED-E30C-D2E1-DDE33E96DA10}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LudusGame", "LudusGame\LudusGame.vcxproj", "{AC4A19AC-18B5-CD22-61F3-7EC8CD9CAB77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{15A0C35D-0158-05AB-6A5F-DE065636A09B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ludus", "Ludus\Ludus.vcxproj", "{B227A00D-1E3C-C8BE-E7BD-6B1E5391C4EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Dist|x64 = Dist|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC4A19AC-18B5-CD22-61F3-7EC8CD9CAB77}.Debug|x64.ActiveCfg = Debug|x64
+		{AC4A19AC-18B5-CD22-61F3-7EC8CD9CAB77}.Debug|x64.Build.0 = Debug|x64
+		{AC4A19AC-18B5-CD22-61F3-7EC8CD9CAB77}.Dist|x64.ActiveCfg = Dist|x64
+		{AC4A19AC-18B5-CD22-61F3-7EC8CD9CAB77}.Dist|x64.Build.0 = Dist|x64
+		{AC4A19AC-18B5-CD22-61F3-7EC8CD9CAB77}.Release|x64.ActiveCfg = Release|x64
+		{AC4A19AC-18B5-CD22-61F3-7EC8CD9CAB77}.Release|x64.Build.0 = Release|x64
+		{B227A00D-1E3C-C8BE-E7BD-6B1E5391C4EF}.Debug|x64.ActiveCfg = Debug|x64
+		{B227A00D-1E3C-C8BE-E7BD-6B1E5391C4EF}.Debug|x64.Build.0 = Debug|x64
+		{B227A00D-1E3C-C8BE-E7BD-6B1E5391C4EF}.Dist|x64.ActiveCfg = Dist|x64
+		{B227A00D-1E3C-C8BE-E7BD-6B1E5391C4EF}.Dist|x64.Build.0 = Dist|x64
+		{B227A00D-1E3C-C8BE-E7BD-6B1E5391C4EF}.Release|x64.ActiveCfg = Release|x64
+		{B227A00D-1E3C-C8BE-E7BD-6B1E5391C4EF}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AC4A19AC-18B5-CD22-61F3-7EC8CD9CAB77} = {DD376B17-49ED-E30C-D2E1-DDE33E96DA10}
+		{B227A00D-1E3C-C8BE-E7BD-6B1E5391C4EF} = {15A0C35D-0158-05AB-6A5F-DE065636A09B}
+	EndGlobalSection
+EndGlobal
