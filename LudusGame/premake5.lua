@@ -17,7 +17,8 @@ project "LudusGame"
 	{
 		"src",
 		"%{wks.location}/Ludus/src",
-		"%{wks.location}/Ludus/3rdparty"
+		"%{wks.location}/Ludus/3rdparty",
+		"%{wks.location}/Ludus/3rdparty/spdlog/include"
 	}
 
 	links

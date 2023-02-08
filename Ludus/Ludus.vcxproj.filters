@@ -9,6 +9,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Ludus.h" />
     <ClInclude Include="src\Ludus\Core\Application.h">
       <Filter>Ludus\Core</Filter>
     </ClInclude>
@@ -19,12 +20,20 @@
       <Filter>Ludus\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\ldpch.h" />
-    <ClInclude Include="src\Ludus.h" />
+    <ClInclude Include="src\Ludus\Core\Log.h" />
+    <ClInclude Include="src\Ludus\Core\Base.h" />
+    <ClInclude Include="src\Ludus\Events\Event.h" />
+    <ClInclude Include="src\Ludus\Events\KeyEvent.h" />
+    <ClInclude Include="src\Ludus\Core\KeyCodes.h" />
+    <ClInclude Include="src\Ludus\Events\MouseEvent.h" />
+    <ClInclude Include="src\Ludus\Core\MouseCodes.h" />
+    <ClInclude Include="src\Ludus\Events\ApplicationEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Ludus\Core\Application.cpp">
       <Filter>Ludus\Core</Filter>
     </ClCompile>
     <ClCompile Include="src\ldpch.cpp" />
+    <ClCompile Include="src\Ludus\Core\Log.cpp" />
   </ItemGroup>
 </Project>
