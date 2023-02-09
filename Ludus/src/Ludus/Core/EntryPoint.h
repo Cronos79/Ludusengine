@@ -8,7 +8,7 @@ extern Ludus::Application* Ludus::CreateApplication(ApplicationCommandLineArgs a
 
 int main(int argc, char** argv)
 {
-	//Hazel::Log::Init();
+	Ludus::Log::Init();
 
 	//HZ_PROFILE_BEGIN_SESSION("Startup", "HazelProfile-Startup.json");
 	auto app = Ludus::CreateApplication({ argc, argv });

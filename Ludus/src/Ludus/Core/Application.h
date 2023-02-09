@@ -1,5 +1,7 @@
 #pragma once
 #include <string>
+#include "Ludus/Core/Window.h"
+#include "../Events/ApplicationEvent.h"
 
 int main(int argc, char** argv);
 
@@ -29,12 +31,20 @@ namespace Ludus
 	public:
 		Application(const ApplicationSpecification& specification);
 		virtual ~Application();
+		void OnEvent(Event& e);
+		Window& GetWindow() { return *m_Window; }
+		void Close();
 		virtual void Begin();
 		virtual void Tick(float dt);
 	private:
+		bool OnWindowClose(WindowCloseEvent& e);
+		bool OnWindowResize(WindowResizeEvent& e);
 		void Run();
 	private:
 		bool IsRunning{ false };
+		bool m_Minimized = false;
+		ApplicationSpecification m_Specification;
+		Scope<Window> m_Window;
 		friend int ::main(int argc, char** argv);
 	};
 

@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{15A0C35D-0
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ludus", "Ludus\Ludus.vcxproj", "{B227A00D-1E3C-C8BE-E7BD-6B1E5391C4EF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{53E47842-3FC8-3998-A828-34EB942B241A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GLFW", "Ludus\3rdparty\GLFW\GLFW.vcxproj", "{154B857C-0182-860D-AA6E-6C109684020F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -28,6 +32,12 @@ Global
 		{B227A00D-1E3C-C8BE-E7BD-6B1E5391C4EF}.Dist|x64.Build.0 = Dist|x64
 		{B227A00D-1E3C-C8BE-E7BD-6B1E5391C4EF}.Release|x64.ActiveCfg = Release|x64
 		{B227A00D-1E3C-C8BE-E7BD-6B1E5391C4EF}.Release|x64.Build.0 = Release|x64
+		{154B857C-0182-860D-AA6E-6C109684020F}.Debug|x64.ActiveCfg = Debug|x64
+		{154B857C-0182-860D-AA6E-6C109684020F}.Debug|x64.Build.0 = Debug|x64
+		{154B857C-0182-860D-AA6E-6C109684020F}.Dist|x64.ActiveCfg = Dist|x64
+		{154B857C-0182-860D-AA6E-6C109684020F}.Dist|x64.Build.0 = Dist|x64
+		{154B857C-0182-860D-AA6E-6C109684020F}.Release|x64.ActiveCfg = Release|x64
+		{154B857C-0182-860D-AA6E-6C109684020F}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -35,5 +45,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{AC4A19AC-18B5-CD22-61F3-7EC8CD9CAB77} = {99427816-05F8-F00B-8EEC-EAE2FAA0E70F}
 		{B227A00D-1E3C-C8BE-E7BD-6B1E5391C4EF} = {15A0C35D-0158-05AB-6A5F-DE065636A09B}
+		{154B857C-0182-860D-AA6E-6C109684020F} = {53E47842-3FC8-3998-A828-34EB942B241A}
 	EndGlobalSection
 EndGlobal

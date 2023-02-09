@@ -1,6 +1,7 @@
 -- Ludus Depends
 
 IncludeDir = {}
+IncludeDir["GLFW"] = "%{wks.location}/Ludus/3rdparty/GLFW/include"
 
 LibraryDir = {}
 

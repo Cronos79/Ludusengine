@@ -46,4 +46,4 @@ namespace Ludus {
 }
 
 #include "Ludus/Core/Log.h"
-//#include "Hazel/Core/Assert.h"
+#include "Ludus/Core/Assert.h"

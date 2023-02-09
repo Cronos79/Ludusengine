@@ -7,33 +7,73 @@
     <Filter Include="Ludus\Core">
       <UniqueIdentifier>{4AEB7F2D-36A3-C17A-9FAA-9AD68B815C6B}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ludus\Events">
+      <UniqueIdentifier>{56F74992-425A-D936-EBDF-11EDD721A5B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Ludus.h" />
     <ClInclude Include="src\Ludus\Core\Application.h">
       <Filter>Ludus\Core</Filter>
     </ClInclude>
+    <ClInclude Include="src\Ludus\Core\Base.h">
+      <Filter>Ludus\Core</Filter>
+    </ClInclude>
     <ClInclude Include="src\Ludus\Core\EntryPoint.h">
+      <Filter>Ludus\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ludus\Core\KeyCodes.h">
+      <Filter>Ludus\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ludus\Core\Log.h">
+      <Filter>Ludus\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ludus\Core\MouseCodes.h">
       <Filter>Ludus\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\Ludus\Core\PlatformDetection.h">
       <Filter>Ludus\Core</Filter>
     </ClInclude>
+    <ClInclude Include="src\Ludus\Core\Window.h">
+      <Filter>Ludus\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ludus\Events\ApplicationEvent.h">
+      <Filter>Ludus\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ludus\Events\Event.h">
+      <Filter>Ludus\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ludus\Events\KeyEvent.h">
+      <Filter>Ludus\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ludus\Events\MouseEvent.h">
+      <Filter>Ludus\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\ldpch.h" />
-    <ClInclude Include="src\Ludus\Core\Log.h" />
-    <ClInclude Include="src\Ludus\Core\Base.h" />
-    <ClInclude Include="src\Ludus\Events\Event.h" />
-    <ClInclude Include="src\Ludus\Events\KeyEvent.h" />
-    <ClInclude Include="src\Ludus\Core\KeyCodes.h" />
-    <ClInclude Include="src\Ludus\Events\MouseEvent.h" />
-    <ClInclude Include="src\Ludus\Core\MouseCodes.h" />
-    <ClInclude Include="src\Ludus\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Ludus\Core\Assert.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Ludus\Core\Application.cpp">
       <Filter>Ludus\Core</Filter>
     </ClCompile>
+    <ClCompile Include="src\Ludus\Core\Log.cpp">
+      <Filter>Ludus\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ludus\Core\Window.cpp">
+      <Filter>Ludus\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\ldpch.cpp" />
-    <ClCompile Include="src\Ludus\Core\Log.cpp" />
   </ItemGroup>
 </Project>

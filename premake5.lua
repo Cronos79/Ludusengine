@@ -17,6 +17,7 @@ workspace "Ludus"
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 group "Dependencies"
+	include "Ludus/3rdparty/GLFW"
 	--include "3rdparty/premake"
 group ""
 

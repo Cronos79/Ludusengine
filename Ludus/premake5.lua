@@ -23,11 +23,13 @@ project "Ludus"
 	includedirs
 	{
 		"src",
-		"3rdparty/spdlog/include"
+		"3rdparty/spdlog/include",
+		"3rdparty/GLFW/include"
 	}
 
 	links
 	{
+		"GLFW"
 	}
 
 	filter "system:windows"
