@@ -144,9 +144,13 @@
     <ClInclude Include="src\Ludus\Core\Base.h" />
     <ClInclude Include="src\Ludus\Core\EntryPoint.h" />
     <ClInclude Include="src\Ludus\Core\KeyCodes.h" />
+    <ClInclude Include="src\Ludus\Core\Layer.h" />
+    <ClInclude Include="src\Ludus\Core\LayerStack.h" />
     <ClInclude Include="src\Ludus\Core\Log.h" />
     <ClInclude Include="src\Ludus\Core\MouseCodes.h" />
     <ClInclude Include="src\Ludus\Core\PlatformDetection.h" />
+    <ClInclude Include="src\Ludus\Core\Timer.h" />
+    <ClInclude Include="src\Ludus\Core\Timestep.h" />
     <ClInclude Include="src\Ludus\Core\Window.h" />
     <ClInclude Include="src\Ludus\Events\ApplicationEvent.h" />
     <ClInclude Include="src\Ludus\Events\Event.h" />
@@ -157,6 +161,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Ludus\Core\Application.cpp" />
+    <ClCompile Include="src\Ludus\Core\Layer.cpp" />
+    <ClCompile Include="src\Ludus\Core\LayerStack.cpp" />
     <ClCompile Include="src\Ludus\Core\Log.cpp" />
     <ClCompile Include="src\Ludus\Core\Window.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />

@@ -60,6 +60,10 @@
     </ClInclude>
     <ClInclude Include="src\ldpch.h" />
     <ClInclude Include="src\Ludus\Core\Assert.h" />
+    <ClInclude Include="src\Ludus\Core\Layer.h" />
+    <ClInclude Include="src\Ludus\Core\Timestep.h" />
+    <ClInclude Include="src\Ludus\Core\LayerStack.h" />
+    <ClInclude Include="src\Ludus\Core\Timer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Ludus\Core\Application.cpp">
@@ -75,5 +79,7 @@
       <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\ldpch.cpp" />
+    <ClCompile Include="src\Ludus\Core\Layer.cpp" />
+    <ClCompile Include="src\Ludus\Core\LayerStack.cpp" />
   </ItemGroup>
 </Project>

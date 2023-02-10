@@ -4,8 +4,11 @@
 
 Ludus::Application* Ludus::CreateApplication(Ludus::ApplicationCommandLineArgs args)
 {
+	// #NOTE: Set windows title and size here
 	ApplicationSpecification spec;
 	spec.Name = "LudusGame";
+	spec.Width = 1920;
+	spec.Height = 1080;
 	spec.WorkingDirectory = "../LudusGame";
 	spec.CommandLineArgs = args;
 
@@ -30,6 +33,6 @@ void LDGApp::Begin()
 
 void LDGApp::Tick(float dt)
 {
-	//LD_INFO("On Tick");
+	//LD_INFO(dt);
 }
 
